@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--    <link rel="stylesheet" href="https://use.typekit.net/sdm0euw.css">-->
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<h1>Amaris</h1>
+<div>
+    <div class="box">
+        <input id="dark_input" type="button" value="dark mode" onclick="toggleDark()">
+        <script>
+            function toggleDark(){
+                document.getElementById("footer").classList.toggle("dark")
+                let logo = document.getElementsByClassName("logo")
+                for (let i = 0; i < logo.length; i++ ) {
+                    if(logo[i].style.filter !== "invert(1)"){
+                        logo[i].style.filter = "invert(1)";
+                    }
+                    else{
+                        logo[i].style.filter = "invert(0)";
+                    }
+                }
+            }
+        </script>
+    </div>
 
+</div>
+<footer id="footer" class="footer">
+    <div class="footer_elements">
+        <div class="services_footer">
+            <h2>Nos services</h2>
+            <p>Telecommunication</p>
+            <p>Formation</p>
+            <p>Installation</p>
+            <p>Vente</p>
+        </div>
+        <div class="contact_footer">
+            <h2>Contact</h2>
+            <div class="contact_element">
+                <img src="images/icons/phone.png" alt="Phone Logo" class="logo">
+                <a href="tel:0141499494">01 41 49 94 94</a>
+            </div>
+            <div class="contact_element">
+                <img src="images/icons/envelope.png" alt="Enveloppe Logo" class="logo">
+                <a href="mailto:amaris@amaristelecom.com">amaris@amaristelecom.com</a>
+            </div>
+            <div class="contact_element">
+                <img src="images/icons/map.png" alt="Map Logo" class="logo">
+                <a href="https://goo.gl/maps/v1Hs2HonZ69SfXP98" target="_blank">125 rue Aristide Briand 92300 Levallois Perret</a>
+            </div>
+        </div>
+        <div class="horaire_footer">
+            <h2>Nos horaires</h2>
+            <div class="horaire_element">
+                <img src="images/icons/calendar-check.png" alt="Calendar check Logo" class="logo">
+
+                <div>Lundi à Jeudi : 8h-20h</div>
+            </div>
+            <div class="horaire_element">
+                <img src="images/icons/calendar-check.png" alt="Calendar check Logo" class="logo">
+                <div>Vendredi : 8h-17h</div>
+            </div>
+            <div class="horaire_element">
+                <img src="images/icons/calendar-x.png" alt="Calendar x Logo" class="logo">
+                <div>Samedi et Dimanche : fermé</div>
+            </div>
+        </div>
+        <div class="reseaux_footer">
+            <h2>Nos réseaux</h2>
+            <div class="reseaux_element">
+                <img src="images/icons/youtube.png" alt="Youtube Logo" class="logo">
+                <a href="https://www.youtube.com/@amaristelecom" target="_blank">YouTube</a>
+            </div>
+            <div class="reseaux_element">
+                <img src="images/icons/linkedin.png" alt="Linkedin Logo" class="logo">
+                <a href="https://www.linkedin.com/company/amaris-audit-maitrise-administration-reseau-informatique-systeme/about/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <small>Copyright © 2023 amaristelecomm.com. Tous droits réservés.</small>
+    </div>
+</footer>
 </body>
 </html>
