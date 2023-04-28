@@ -13,6 +13,7 @@
 }
 .footer_elements{
     display: flex;
+    flex-wrap : wrap;
     justify-content: center;
     gap: 70px;
 }
@@ -30,24 +31,30 @@
 .contact_element, .horaire_element, .reseaux_element{
     display: flex;
     align-items: center;
-    gap: 10px;
+
 }
 .services_footer p{
     margin: 5px;
+
 }
 .contact_footer, .horaire_footer, .reseaux_footer, .services_footer{
+    display : flex;
+    justify-content: center;
+    margin : 0 15px;
+    width : 230px;
     max-width: 230px;
 }
 .contact_footer div, .horaire_footer div, .reseaux_footer div{
     padding: 2px 0;
 }
-@media only screen and (max-width: 1000px) {
-    .footer_elements{
-        display: grid;
-        place-content: center;
-        gap: 15px;
+@media only screen and (max-width: 1037px) {
+    .contact_footer, .horaire_footer, .reseaux_footer, .services_footer{
+        display : block;
+        margin : 0 15px;
     }
+
 }
+
 .copyright{
     display: flex;
     justify-content: center;

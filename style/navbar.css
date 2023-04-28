@@ -35,21 +35,29 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 175px;
+    width: 165px;
+    transition: .3s ease-out;
 }
 
 nav a{
     text-decoration: none;
+    transition: .3s ease-out;
     color: black;
-    border-bottom: 2px solid transparent;
-    transition: .3s ease-in;
 }
 
-nav li:hover{
+
+
+nav ul li:hover{
     background-color: RGBa(200,200,200,0.3);
-    color: #4b6d99;
+
     border-bottom: 2px solid #5e88bf;
 }
+
+nav ul li:hover > a{
+    color: #425f86;;
+}
+
+
 
 .menu_deroulant {
     position: relative;
@@ -68,6 +76,8 @@ nav li:hover{
 nav > ul li:hover .menu_sous_deroulant{
     display: flex;
     flex-direction: column;
+    border-bottom : none;
+
 }
 
 .menu_sous_deroulant li{
@@ -75,16 +85,18 @@ nav > ul li:hover .menu_sous_deroulant{
     width: 100%;
     vertical-align: top;
     font-size: smaller;
-
+    transition : 0.3s ease-in;
+}
+.menu_sous_deroulant li:hover{
+    border-bottom: none;
 }
 .menu_sous_deroulant a{
     height: 38px;
     border-bottom: none;
     padding-top: 15px;
+
 }
-.menu_sous_deroulant a:hover{
-    border-bottom: none;
-}
+
 .menu_deroulant > a::after{
     content:" ▼";
     font-size: 10px;
@@ -93,4 +105,8 @@ nav > ul li:hover .menu_sous_deroulant{
 #logo_amaris{
     height : inherit;
     width : auto;
+}
+
+@media only screen and (max-width: 1000px){
+
 }
