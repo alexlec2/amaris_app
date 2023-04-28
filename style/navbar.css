@@ -1,102 +1,96 @@
 header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
     font-size : 16px;
-    padding : 0 10px 0 10px;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+}
+.navbarDiv{
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    width: inherit;
+    max-width: 1400px;
+    padding: 0 20px;
 }
 
-nav{
-    width: 65%;
-    margin: 0;
-    background-color: white;
-    top: 0;
+nav {
+    height: inherit;
 }
+
 nav ul{
     list-style-type: none;
     display: flex;
-    align-items: center;
-    height : 90px;
+    justify-content: center;
+    height: inherit;
 }
 
-nav ul li{
-    vertical-align: middle;
-    flex: 1;
-    height : 90px;
-    text-align: center;
+nav ul li {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
 }
 
 nav a{
-    height: 56px;
-    display: block;
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
-    padding-top: 32px;
     transition: .3s ease-in;
-
 }
 
-nav a:hover{
+nav li:hover{
     background-color: RGBa(200,200,200,0.3);
     color: #4b6d99;
     border-bottom: 2px solid #5e88bf;
 }
 
-.sous{
+.menu_deroulant {
+    position: relative;
+}
+
+.menu_sous_deroulant{
     display: none;
-    box-shadow: 0px 2px 2px #CCC;
+    position: absolute;
+    top: 72px;
+    box-shadow: 0 2px 2px #CCC;
     background-color: white;
-    width: 100%;
+    width: inherit;
     height: auto;
 }
 
-nav > ul li:hover .sous{
+nav > ul li:hover .menu_sous_deroulant{
     display: flex;
     flex-direction: column;
 }
 
-.sous li{
+.menu_sous_deroulant li{
     text-align: center;
     width: 100%;
     vertical-align: top;
+    font-size: smaller;
 
 }
-.sous a{
+.menu_sous_deroulant a{
     height: 38px;
     border-bottom: none;
     padding-top: 15px;
 }
-.sous a:hover{
+.menu_sous_deroulant a:hover{
     border-bottom: none;
-    background-color: RGBa(200,200,200,0.3);
 }
-.deroulant > a::after{
+.menu_deroulant > a::after{
     content:" ▼";
     font-size: 10px;
 }
 
-.body{
-    height : 700px;
-}
-
-button{
-    color: white;
-    font-size: medium;
-    padding : 20px 30px;
-    background-color: #5e88bf;
-    border : none;
-    border-radius: 20px;
-    transition:.2s ease-out;
-}
-
-button:hover{
-    cursor: pointer;
-    background-color: #425f86;
+#logo_amaris{
+    height : inherit;
+    width : auto;
 }
