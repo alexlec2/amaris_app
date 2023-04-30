@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/carrousel.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="assets/js/fonctions.js"></script>
+    <script src="assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <div class="navbarDiv">
-            <img id="logo_amaris" src="assets/logo/LogoAmaris.png" alt="Amaris Telecom Logo"/>
+            <img class="logo" src="assets/logo/LogoAmaris.png" alt="Amaris Telecom Logo" style="width : auto; height : inherit;"/>
             <nav>
                 <ul>
                     <li><a href="#">Présentation</a></li>
@@ -39,11 +40,22 @@
                     <li><a href="#">Devis/Catalogue</a></li>
                 </ul>
             </nav>
-            <button class="button" role="button">Contact</button>
+            <button class="bouton_navbar" role="button">Contact</button>
         </div>
     </header>
 
     <div class="body">
+        <section aria-label="images_carrousel">
+            <div class="carrousel" data-carousel>
+                <button class="bouton_carrousel next" data-carousel-button="next">&#8250;</button>
+                <button class="bouton_carrousel prev" data-carousel-button="prev">&#8249;</button>
+                <ul data-slides>
+                    <li class="slide" data-active><img class="image_carrousel" src="assets/images/cables.jpg" alt="image1"></li>
+                    <li class="slide"><img class="image_carrousel" src="assets/images/telephone.jpg" alt="image2"></li>
+                    <li class="slide"><img class="image_carrousel" src="assets/images/bureau.jpg" alt="image3"></li>
+                </ul>
+            </div>
+        </section>
         <h1>Amaris</h1>
         <div>
             <div class="box">
