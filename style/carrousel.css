@@ -1,11 +1,19 @@
 .image_carrousel{
     width : 100%;
-    height : 95%;
+    height : 550px;
     object-fit : cover;
 }
+
+.section_carrousel{
+    display : flex;
+    justify-content: center;
+    width : 100%;
+    background-color: #2f4460;
+}
 .carrousel{
-    margin-top : 70px;
     width : 100vw;
+    justify-self : center;
+    max-width :1700px;
     height : 550px;
     position : relative;
 }
@@ -15,11 +23,6 @@
     padding : 0;
     list-style : none;
 }
-
-.section_carrousel{
-    height: 550px;
-}
-
 
 
 .slide{
@@ -32,8 +35,18 @@
 }
 
 .slide .carrousel-text{
+    align-self: center;
     position : absolute;
+    color : white;
     z-index : 5;
+    font-size : 2.5vw;
+    max-font-size: 57px;
+    width : 40%;
+    max-width : 800px;
+    margin :0 5vw;
+    padding : 40px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius : 20px;
 }
 
 .carrousel .active{
@@ -73,7 +86,7 @@
 
 .bas_carrousel{
     display : flex;
-    height : 30px;
+    height : 40px;
     justify-content: center;
 }
 
@@ -124,6 +137,33 @@
     }
 
     .bas_carrousel{
-        height : 10px;
+        height : 35px;
     }
+
+    .image_carrousel{
+        height : 510px;
+    }
+
+}
+
+.presentation{
+    padding : 25px;
+    text-align: center;
+    font-size : 1.7rem;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .slide .carrousel-text{
+        width : 70%;
+        font-size : 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .slide .carrousel-text {
+        font-size : 50px;
+    }
+
+
 }
