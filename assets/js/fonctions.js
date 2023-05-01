@@ -10,7 +10,10 @@ function toggleDark(){
         }
     }
 }
-
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  toggleDark()
+})
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
