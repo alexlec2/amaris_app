@@ -1,14 +1,13 @@
 .image_carrousel{
     width : 100%;
-    height : 100%;
+    height : 95%;
     object-fit : cover;
 }
 .carrousel{
     margin-top : 70px;
     width : 100vw;
-    height : 65vh;
+    height : 550px;
     position : relative;
-    background-color: black;
 }
 
 .carrousel > ul{
@@ -17,19 +16,33 @@
     list-style : none;
 }
 
-.slide{
-    position : absolute;
-    inset : 0;
-    opacity : 0;
-    transition : .4s opacity ease-in-out;
-    transition-delay: .4s;
+.section_carrousel{
+    height: 550px;
 }
 
-.slide[data-active]{
+
+
+.slide{
+    position : absolute;
+    display: grid;
+    inset : 0;
+    opacity : 0;
+    transition : .5s opacity ease-in-out;
+    transition-delay: .5s;
+}
+
+.slide .carrousel-text{
+    position : absolute;
+    z-index : 5;
+}
+
+.carrousel .active{
     opacity :1;
     z-index : 1;
     transition-delay: 0ms;
 }
+
+
 
 .bouton_carrousel{
     color : rgb(255,255,255,0.7);
@@ -56,4 +69,61 @@
 
 .bouton_carrousel.next {
     right : 1.5rem;
+}
+
+.bas_carrousel{
+    display : flex;
+    height : 30px;
+    justify-content: center;
+}
+
+.bas_carrousel_point{
+    display : flex;
+    align-items: center;
+}
+
+.bas_carrousel_point > :not(.active){
+    margin : 0 5px;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background: #bfcfe5;
+    border-radius: 50%
+}
+
+.bas_carrousel_point > :not(.active):hover{
+    cursor : pointer;
+    background: #9eb8d9;
+}
+
+.bas_carrousel_point > .active{
+    margin : 0 5px;
+    list-style: none;
+    width: 40px;
+    height: 12px;
+    background: #5e88bf;
+    border-radius: 10px;
+}
+
+.bas_carrousel_point > .active:hover{
+    cursor : pointer;
+    background: #4b6d99;
+}
+
+@media only screen and (max-width: 1586px) {
+    .section_carrousel{
+        height:510px;
+    }
+
+    .slide{
+        height:510px;
+    }
+
+    .carrousel{
+        height:510px;
+    }
+
+    .bas_carrousel{
+        height : 10px;
+    }
 }

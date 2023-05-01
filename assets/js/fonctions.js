@@ -11,21 +11,51 @@ function toggleDark(){
     }
 }
 
+
+
+
 const buttons = document.querySelectorAll("[data-carousel-button]")
+const button_next = buttons[0]
+const button_prev = buttons[1]
+var sectionIndex = 0
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const offset = button.dataset.carouselButton === "next" ? 1 : -1
-        const slides = button
-            .closest("[data-carousel]")
-            .querySelector("[data-slides]")
+const points = document.querySelectorAll(".point")
+const slides =  document.querySelector("[data-slides]")
 
-        const activeSlide = slides.querySelector("[data-active]")
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if (newIndex < 0) newIndex = slides.children.length - 1
-        if (newIndex >= slides.children.length) newIndex = 0
+button_next.addEventListener("click", () => {
+    let activeSlide = slides.querySelector(".active")
+    let slideIndex = [...slides.children].indexOf(activeSlide)
+    let newIndex = slideIndex+1
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+    slides.children[newIndex].classList.add("active")
+    activeSlide.classList.remove("active")
+    points[newIndex].classList.add("active")
+    points[slideIndex].classList.remove("active")
+})
 
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
+button_prev.addEventListener("click", () => {
+    console.log("prev")
+    let activeSlide = slides.querySelector(".active")
+    let slideIndex = [...slides.children].indexOf(activeSlide)
+    let newIndex = slideIndex-1
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+    slides.children[newIndex].classList.add("active")
+    activeSlide.classList.remove("active")
+    points[newIndex].classList.add("active")
+    points[slideIndex].classList.remove("active")
+})
+
+
+
+
+points.forEach(function(point, index) {
+    point.addEventListener("click", () => {
+        let activeSlide = slides.querySelector(".active")
+        document.querySelector(".bas_carrousel_point .active").classList.remove("active")
+        point.classList.add("active")
+        slides.children[index].classList.add("active")
+        activeSlide.classList.remove("active")
     })
 })
