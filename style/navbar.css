@@ -145,8 +145,11 @@ nav > ul li:hover .menu_sous_deroulant{
     display: none;
     place-content: center;
 }
-#menuResponsive{
+#menuResponsive, #xResponsive{
     cursor: pointer;
+}
+.to_not_display{
+    display: none;
 }
 /* FIN DU STYLE BOUTON MENU RESPONSIVE */
 
@@ -167,5 +170,6 @@ nav > ul li:hover .menu_sous_deroulant{
     #menu_responsive_div{
         display: grid;
         place-content: center;
+        margin-right: 10px;
     }
 }

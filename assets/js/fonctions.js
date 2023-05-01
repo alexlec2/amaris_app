@@ -15,6 +15,22 @@ checkbox.addEventListener("change", () => {
   toggleDark()
 })
 
+const menu_responsive = document.getElementById("menuResponsive")
+const X_responsive = document.getElementById("xResponsive")
+
+menu_responsive.addEventListener("click", () => {
+    openMenuReponsive()
+})
+X_responsive.addEventListener("click", () => {
+    openMenuReponsive()
+})
+
+function openMenuReponsive(){
+    let xResponsive = document.getElementById("xResponsive")
+    let menuResponsive = document.getElementById("menuResponsive")
+    xResponsive.classList.toggle("to_not_display")
+    menuResponsive.classList.toggle("to_not_display")
+}
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 const button_next = buttons[0]
