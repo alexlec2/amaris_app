@@ -39,14 +39,15 @@
     position : absolute;
     color : white;
     z-index : 5;
-    font-size : 2.5vw;
+    font-size : 2vw;
     max-font-size: 57px;
-    width : 40%;
+    width : 30%;
     max-width : 800px;
-    margin :0 5vw;
+    margin :0 7vw;
     padding : 40px;
     background-color: rgba(0,0,0,0.7);
     border-radius : 20px;
+    transition: all 0.5s;
 }
 
 .carrousel .active{
@@ -162,7 +163,7 @@
 
 @media screen and (min-width: 1700px) {
     .slide .carrousel-text {
-        font-size : 50px;
+        font-size : 35px;
     }
 
 
