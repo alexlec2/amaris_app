@@ -11,7 +11,13 @@ function toggleDark(){
     }
 }
 
+window.onload = calculerWidthPartenaire
 
+function calculerWidthPartenaire(){
+    let partenairesLigne1 = document.getElementsByClassName("partenaire ligne1")
+    document.getElementsByClassName("carrousel_partenaires")[0].style.width = partenairesLigne1.length * 245+"px"
+    console.log(partenairesLigne1.length * 245)
+}
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
