@@ -92,7 +92,7 @@
     
 .partenaire:hover {
     transform: scale(1.05);
-    cursor: pointer;
+
 }
 
 .carrousel_partenaires-enfant > div {
@@ -157,4 +157,5 @@
     transform: translateX(24px);
 }
   /* FIN DU STYLE DU BOUTON POUR LE MODE SOMBRE */
+
 

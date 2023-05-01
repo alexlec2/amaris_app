@@ -17,7 +17,10 @@ header{
     height: inherit;
     width: inherit;
     max-width: 2000px;
-    padding: 0 20px;
+}
+
+#bouton_contact_div{
+    padding-right: 10px;
 }
 
 nav {
@@ -94,9 +97,6 @@ nav ul li:hover > a{
     background-color: #425f86;
 }
 
-
-
-
 .menu_deroulant {
     position: relative;
 }
@@ -140,10 +140,32 @@ nav > ul li:hover .menu_sous_deroulant{
     font-size: 10px;
 }
 
+/* STYLE BOUTON MENU RESPONSIVE */
+#menu_responsive_div{
+    display: none;
+    place-content: center;
+}
+#menuResponsive{
+    cursor: pointer;
+}
+/* FIN DU STYLE BOUTON MENU RESPONSIVE */
 
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     nav ul li {
         width : 165px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    nav ul li {
+        width : 140px;
+    }
+}
+@media only screen and (max-width: 800px){
+    nav, #bouton_contact_div {
+        display: none;
+    }
+    #menu_responsive_div{
+        display: grid;
+        place-content: center;
     }
 }
