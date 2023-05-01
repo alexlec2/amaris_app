@@ -11,15 +11,6 @@ function toggleDark(){
     }
 }
 
-window.onload = calculerWidthPartenaire
-
-function calculerWidthPartenaire(){
-    let partenairesLigne1 = document.getElementsByClassName("partenaire ligne1")
-    let partenairesLigne2 = document.getElementsByClassName("partenaire ligne2")
-
-    document.getElementsByClassName("carrousel_partenaires premier")[0].style.width = partenairesLigne1.length/2 * 250+"px"
-    document.getElementsByClassName("carrousel_partenaires deuxieme")[0].style.width = partenairesLigne2.length/2 * 250+"px"
-}
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
