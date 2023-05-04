@@ -9,7 +9,7 @@ header{
     top: 0;
     left: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    background-color:rgb(241,241,241);
+    background-color:white;
 }
 .navbarDiv{
     display: flex;
@@ -22,7 +22,9 @@ header{
 #bouton_contact_div{
     padding-right: 10px;
 }
-
+header{
+    z-index: 30;
+}
 nav {
     height: inherit;
 }
@@ -140,7 +142,12 @@ nav > ul li:hover .menu_sous_deroulant{
     font-size: 10px;
 }
 
-/* STYLE BOUTON MENU RESPONSIVE */
+/* STYLE MENU RESPONSIVE */
+#responsiveNavbar {
+    display: none;
+    z-index: 10;
+    position: fixed;
+}
 #menu_responsive_div{
     display: none;
     place-content: center;
@@ -151,7 +158,51 @@ nav > ul li:hover .menu_sous_deroulant{
 .to_not_display{
     display: none;
 }
-/* FIN DU STYLE BOUTON MENU RESPONSIVE */
+@media only screen and (max-width: 800px){
+    
+    #responsiveNavbar{
+        height: calc(100vh - 69px);
+        width: 100%;
+        position: fixed;
+        top: 69px;
+        background-color: white;
+        place-content: center;
+        
+    }
+    
+    #responsiveNavbar ul {
+        list-style-type: none;
+    }
+    
+    #responsiveNavbar ul{
+        list-style-type: none;
+    }
+    
+    #responsiveNavbar ul li {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .25s ease-out;
+        padding: 0 20px;
+        border-radius: 5px;
+    }
+    
+    #responsiveNavbar a{
+        text-decoration: none;
+        transition: .3s ease-out;
+        color: black;
+    }
+    #responsiveNavbar ul li:hover{
+        background-color: RGBa(200,200,200,0.3);
+        border-bottom: 2px solid #5e88bf;
+    }
+    
+    #responsiveNavbar ul li:hover > a{
+        color: #425f86;;
+    }
+}
+/* FIN DU STYLE BOUTON RESPONSIVE */
 
 @media only screen and (max-width: 1200px){
     nav ul li {

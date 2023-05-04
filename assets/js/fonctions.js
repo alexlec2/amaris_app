@@ -24,13 +24,28 @@ menu_responsive.addEventListener("click", () => {
 X_responsive.addEventListener("click", () => {
     openMenuReponsive()
 })
-
+count = 0;
 function openMenuReponsive(){
-    let xResponsive = document.getElementById("xResponsive")
-    let menuResponsive = document.getElementById("menuResponsive")
-    xResponsive.classList.toggle("to_not_display")
+    let xIcon = document.getElementById("xResponsive")
+    let menuIcon = document.getElementById("menuResponsive")
+    let menuResponsive = document.getElementById("responsiveNavbar")
+
     menuResponsive.classList.toggle("to_not_display")
+    xIcon.classList.toggle("to_not_display")
+    menuIcon.classList.toggle("to_not_display")
+    if(count %2 == 0){
+        menuResponsive.style.display = 'grid'
+        document.getElementsByTagName('header')[0].style.boxShadow = 'none'
+        /*document.getElementsByClassName('nonNavbar')[0].style.display = "none"*/
+    }
+    else{
+        menuResponsive.style.display = 'none'
+        document.getElementsByTagName('header')[0].style.boxShadow = '0 2px 4px 0 rgba(0,0,0,.2)'   
+        /*document.getElementsByClassName('nonNavbar')[0].style.display = "block"*/
+    }
+    count++
 }
+
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 const button_next = buttons[0]

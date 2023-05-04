@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./style/carrousel.css">
     <script src="./assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <header>
         <div class="navbarDiv">
-            <img class="logo" src="./assets/logo/logo-Amaris.png" alt="Amaris Telecom Logo" style="width : auto; height : inherit;"/>
+            <img src="./assets/logo/logo-Amaris.png" alt="Amaris Telecom Logo" style="width : auto; height : inherit;"/>
             <nav>
                 <ul>
                     <li><a href="#">Présentation</a></li>
@@ -46,9 +50,18 @@
                 <img id="xResponsive" class="to_not_display" src="./assets/icons/x.png" alt="X responsive icon"/>
             </div>
         </div>
+       
     </header>
+    <div id="responsiveNavbar" class="animate__animated animate__slideInDown">
+        <ul>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Formations</a> </li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Devis/Catalogue</a></li>
+        </ul>
+    </div>
 
-    <div class="body">
+    <div class="body nonNavbar">
         <div id="carroussel_intro">
             <section class="section_carrousel" aria-label="images_carrousel">
                 <div class="carrousel" data-carousel>
@@ -266,7 +279,7 @@
         </label>
     </div>
 
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer nonNavbar">
         <div class="footer_elements">
             <div class="services_footer">
                 <div>
