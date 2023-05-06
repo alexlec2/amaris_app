@@ -33,27 +33,30 @@ function openMenuReponsive(){
     menuResponsive[0].classList.toggle("to_not_display")
     xIcon.classList.toggle("to_not_display")
     menuIcon.classList.toggle("to_not_display")
+
     if(count %2 === 0){
         menuResponsive[0].style.display = 'grid'
         menuResponsive[1].style.display = 'none'
         document.getElementsByTagName('header')[0].style.boxShadow = 'none'
+        count++
         setTimeout(function() {
             document.getElementsByClassName("body")[0].style.display = 'none'
             document.getElementsByClassName("footer")[0].style.display = 'none'
         }, 1000);
-
     }
     else{
         menuResponsive[0].style.display = 'none'
         menuResponsive[1].style.display = 'grid'
         document.getElementsByClassName("body")[0].style.display = 'block'
         document.getElementsByClassName("footer")[0].style.display = 'block'
+        count++
         setTimeout(function() {
             menuResponsive[1].style.display = 'none'
+            document.getElementsByClassName("body")[0].style.display = 'block'
+            document.getElementsByClassName("footer")[0].style.display = 'block'
             document.getElementsByTagName('header')[0].style.boxShadow = '0 2px 4px 0 rgba(0,0,0,.2)'
         }, 1000);
     }
-    count++
 }
 
 
