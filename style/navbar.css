@@ -143,7 +143,7 @@ nav > ul li:hover .menu_sous_deroulant{
 }
 
 /* STYLE MENU RESPONSIVE */
-#responsiveNavbar {
+.responsiveNavbar {
     display: none;
     z-index: 10;
     position: fixed;
@@ -160,25 +160,24 @@ nav > ul li:hover .menu_sous_deroulant{
 }
 @media only screen and (max-width: 800px){
     
-    #responsiveNavbar{
+    .responsiveNavbar{
         height: calc(100vh - 69px);
         width: 100%;
         position: fixed;
         top: 69px;
         background-color: white;
         place-content: center;
-        
     }
     
-    #responsiveNavbar ul {
+    .responsiveNavbar ul {
         list-style-type: none;
     }
     
-    #responsiveNavbar ul{
+    .responsiveNavbar ul{
         list-style-type: none;
     }
     
-    #responsiveNavbar ul li {
+    .responsiveNavbar ul li {
         height: 10vh;
         display: flex;
         align-items: center;
@@ -188,17 +187,17 @@ nav > ul li:hover .menu_sous_deroulant{
         border-radius: 5px;
     }
     
-    #responsiveNavbar a{
+    .responsiveNavbar a{
         text-decoration: none;
         transition: .3s ease-out;
         color: black;
     }
-    #responsiveNavbar ul li:hover{
+    .responsiveNavbar ul li:hover{
         background-color: RGBa(200,200,200,0.3);
         border-bottom: 2px solid #5e88bf;
     }
     
-    #responsiveNavbar ul li:hover > a{
+    .responsiveNavbar ul li:hover > a{
         color: #425f86;;
     }
 }

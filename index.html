@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="./style/carrousel.css">
     <script src="./assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -49,10 +46,20 @@
                 <img id="menuResponsive" src="./assets/icons/menu-responsive.png" alt="Menu responsive icon"/>
                 <img id="xResponsive" class="to_not_display" src="./assets/icons/x.png" alt="X responsive icon"/>
             </div>
+
         </div>
+
        
     </header>
-    <div id="responsiveNavbar" class="animate__animated animate__slideInDown">
+    <div class="responsiveNavbar to_not_display animate__animated animate__slideInDown">
+        <ul>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Formations</a> </li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Devis/Catalogue</a></li>
+        </ul>
+    </div>
+    <div class="responsiveNavbar to_not_display animate__animated animate__slideOutUp">
         <ul>
             <li><a href="#">Présentation</a></li>
             <li><a href="#">Formations</a> </li>
@@ -61,7 +68,7 @@
         </ul>
     </div>
 
-    <div class="body nonNavbar">
+    <div class="body">
         <div id="carroussel_intro">
             <section class="section_carrousel" aria-label="images_carrousel">
                 <div class="carrousel" data-carousel>
@@ -91,11 +98,19 @@
             <h3>Au service des professionnels.</h3>
         </div>
 
-        <div id="video_section"></div>
+        <div id="video_section">
+            <div class="text">
+                <h2>Titre du texte</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa vel mollis malesuada. Sed mollis mi ut purus hendrerit, sed gravida eros tempor. In hac habitasse platea dictumst. Aenean quis augue ac lorem eleifend lacinia eget at nisi.</p>
+            </div>
+            <div class="container-iframe">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/X7Ucy7FRMeY?autoplay=1"></iframe>
+            </div>
+        </div>
         
         <div id="carrousel_partenaires">
             <div>
-                <h1>Ils nous ont fait confiance ...</h1>
+                <h1>Ils nous font confiance ...</h1>
             </div>
             <div class="carrousel_partenaires">
                 <div class="carrousel_partenaires-enfant premier">
@@ -279,7 +294,7 @@
         </label>
     </div>
 
-    <footer id="footer" class="footer nonNavbar">
+    <footer id="footer" class="footer">
         <div class="footer_elements">
             <div class="services_footer">
                 <div>
