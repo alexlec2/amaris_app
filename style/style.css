@@ -28,15 +28,21 @@
 
 /* STYLE DE LA SECTION DES VIDEOS */
 #video_section{
-    width: inherit;
-    max-width: 2000px;
+    display: grid;
+    place-content: center;
+    width: 100%;
     background-color: #4b6d99;
+
+}
+#video_section > div{
+    max-width: 2000px;
     display: flex;
     justify-content: center;
     align-content: center;
     color: white;
     height: auto;
     max-height: 600px;
+    overflow: hidden;
 }
 .container-iframe {
     position: relative;
@@ -47,8 +53,10 @@
 .text{
     display: grid;
     place-content: center;
-    padding: 20px;
+    padding: 30px;
     width: 30%;
+    font-size: 1.6em;
+    transition: all 0.5s ease-in;
 }
 .text h2{
     margin-bottom: 30px;
@@ -61,6 +69,16 @@
     height: 100%;
     max-height: 600px;
     border: none;
+}
+@media only screen and (max-width: 1200px){
+    .text{
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 900px){
+    .text{
+        font-size: 1em;
+    }
 }
 /* FIN DU STYLE DE LA SECTION DES VIDEOS */
 
