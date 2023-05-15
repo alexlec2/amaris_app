@@ -22,7 +22,7 @@ p{
 }
 .titre{
     text-align: center;
-    padding: 30px 20px;
+    padding: 10px 20px;
     width: inherit;
     transition: font-size 0.6s ease-in;
     font-weight: 900;
@@ -35,8 +35,8 @@ p{
     visibility:hidden;
 }
 @media only screen and (max-width: 900px){
-    .titre h1{
-        font-size: 1.7em;
+    .titre {
+        font-size: 1.6em;
     }
 }
 @keyframes fadeIn {
@@ -259,6 +259,16 @@ p{
 @keyframes carrousel_partenaires {
     0% { left: 0; }
     100% { left: -100%; }
+}
+@media only screen and (max-width: 1000px){
+    .titre_partenaire {
+        font-size: 1.6em;
+    }
+}
+@media only screen and (max-width: 600px){
+    .titre_partenaire {
+        font-size: 1.15em;
+    }
 }
 .partenaire > img {
     width: auto;
