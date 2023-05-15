@@ -10,6 +10,11 @@ header{
     left: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     background-color:white;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.3rem;
+    letter-spacing: -.08px;
+    line-height: 1.5;
 }
 .navbarDiv{
     display: flex;
@@ -20,6 +25,8 @@ header{
 }
 #bouton_contact_div{
     padding-right: 10px;
+    display: flex;
+    align-items: center;
 }
 header{
     z-index: 30;
@@ -40,7 +47,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 185px;
+    width: 200px;
     transition: .25s ease-out;
 }
 
@@ -61,19 +68,18 @@ nav ul li:hover > a{
     color: #425f86;;
 }
 
-.bouton_navbar{
-    backface-visibility: hidden;
+.bouton{
     background-color: #5e88bf;
-    border-radius: 6px;
+    border-radius: 250px;
     border-width: 0;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    font-size: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
     height: 44px;
     line-height: 1.15;
-    margin: 12px 0 0;
     outline: none;
     overflow: hidden;
     padding: 0 25px;
@@ -82,18 +88,15 @@ nav ul li:hover > a{
     text-transform: none;
     transform: translateZ(0);
     transition: all .2s,box-shadow .08s ease-in;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
-.bouton_navbar:focus {
+.bouton:focus {
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
 
 
-.bouton_navbar:hover{
+.bouton:hover{
     cursor: pointer;
     background-color: #425f86;
 }
@@ -110,6 +113,11 @@ nav ul li:hover > a{
     background-color: white;
     width: inherit;
     height: auto;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 1.1rem;
+    letter-spacing: -.08px;
+    line-height: 1.5;
 }
 
 nav > ul li:hover .menu_sous_deroulant{
@@ -125,6 +133,7 @@ nav > ul li:hover .menu_sous_deroulant{
     vertical-align: top;
     font-size: smaller;
     transition : 0.3s ease-in;
+
 }
 .menu_sous_deroulant li:hover{
     border-bottom: none;
@@ -204,15 +213,15 @@ nav > ul li:hover .menu_sous_deroulant{
 
 @media only screen and (max-width: 1200px){
     nav ul li {
-        width : 165px;
+        width : 185px;
     }
 }
 @media only screen and (max-width: 1000px){
     nav ul li {
-        width : 140px;
+        width : 160px;
     }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     nav, #bouton_contact_div {
         display: none;
     }
@@ -220,5 +229,17 @@ nav > ul li:hover .menu_sous_deroulant{
         display: grid;
         place-content: center;
         margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    nav {
+        display: block;
+    }
+    #menu_responsive_div{
+        display: none;
+    }
+    .responsiveNavbar {
+        display: none;
     }
 }

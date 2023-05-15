@@ -4,7 +4,6 @@
     padding: 50px 0 20px 0;
     font-size: smaller;
     transition: background 0.2s linear;
-
 }
 .footer h2{
     padding-bottom: 15px;
@@ -34,7 +33,6 @@
 .contact_element, .horaire_element, .reseaux_element{
     display: flex;
     align-items: center;
-
 }
 .services_footer p{
     margin: 5px;

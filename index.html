@@ -10,10 +10,11 @@
     <script src="./assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./scroll-entrance-master/src/scroll-entrance.js"></script>
 </head>
 <body>
     <header>
-        <div class="navbarDiv">
+        <div class="navbarDiv" >
             <a href="/">
                 <img src="./assets/logo/logo-Amaris.png" alt="Amaris Telecom Logo" style="width : auto; height : 70px;"/>
             </a>
@@ -42,7 +43,7 @@
                 </ul>
             </nav>
             <div id="bouton_contact_div">
-                <button id="bouton_contact" class="bouton_navbar" role="button">Contact</button>
+                <button id="bouton_contact" class="bouton" role="button">Contact</button>
             </div>
             <div id="menu_responsive_div">
                 <img id="menuResponsive" src="./assets/icons/menu-responsive.png" alt="Menu responsive icon"/>
@@ -77,9 +78,27 @@
                     <button class="bouton_carrousel next" data-carousel-button="prev">&#8250;</button>
                     <button class="bouton_carrousel prev" data-carousel-button="next">&#8249;</button>
                     <ul data-slides>
-                        <li class="slide active"><img class="image_carrousel" src="assets/images/cables.jpg" alt="image1"><span class="carrousel-text"><h1>Lorem ipsum dolor sit amet.</h1><p>Qui officia voluptates in blanditiis magni aut facilis sint et amet galisum!</p></span></li>
-                        <li class="slide"><img class="image_carrousel" src="assets/images/telephone.jpg" alt="image2"><span class="carrousel-text"><h1>Aut culpa error ut dolores?</h1><p>Qui vitae similique quo amet quidem et possimus facilis.</p></span></li>
-                        <li class="slide"><img class="image_carrousel" src="assets/images/bureau.jpg" alt="image3"><span class="carrousel-text"><h1>Eos molestiae facilis aperiam.</h1><p>Et doloribus quos a esse nihil aut autem expedita.</p></span></li>
+                        <li class="slide active">
+                            <img class="image_carrousel" src="assets/images/cables.jpg" alt="image1">
+                            <span class="carrousel-text fade" data-entrance="fade">
+                                <h1>Services de conseils et de formations</h1>
+                                <p>AMARIS est experte en téléphonie, en télécommunications et en informatique depuis plus de 24 ans</p>
+                            </span>
+                        </li>
+                        <li class="slide">
+                            <img class="image_carrousel" src="assets/images/telephone.jpg" alt="image2">
+                            <span class="carrousel-text">
+                                <h1>Services d'installation et de maintenance'</h1>
+                                <p>Nous réalisons également des installations téléphoniques et assurons le service maintenance du matériel pour les professionnels</p>
+                            </span>
+                        </li>
+                        <li class="slide">
+                            <img class="image_carrousel" src="assets/images/bureau.jpg" alt="image3">
+                            <span class="carrousel-text">
+                                <h1>Environnement de formation agréable</h1>
+                                <p>Nous vous acceuillons dans nos locaux situé à Levallois-Perret.</p>
+                            </span>
+                        </li>
                         <li class="slide"><img class="image_carrousel" src="assets/images/batiment.jpg" alt="image3"><span class="carrousel-text"><h1>Ut doloremque libero delectus.</h1><p>Est harum quam ad beatae nihil ut dolore consequatur.</p></span></li>
                     </ul>
                 </div>
@@ -97,16 +116,76 @@
         </div>
         
         <div id="presentation_section">
-            <h3>Au service des professionnels.</h3>
+            <div class="titre">
+                <h1 data-entrance="fade" class="fade">Au service des professionnels.</h1>
+            </div>
+            <div id="presentation_elements">
+                <div class="element_presentation">
+                    <div>
+                        <img src="./assets/images/formation.png" alt="image formations" class="image_presentation">
+                    </div>
+                    <div>
+                        <h3>Formation</h3>
+                    </div>
+                    <div>
+                        <p>Formation des meilleurs au meikkeurs</p>  
+                    </div>
+                    <div>
+                        <button type="button" class="bouton">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="element_presentation">
+                    <div>
+                        <img src="./assets/images/conseil.png" alt="image conseil" class="image_presentation">
+                    </div>
+                    <div>
+                        <h3>Conseil</h3>
+                    </div>
+                    <div>
+                        <p>Formation des meilleurs au meikkeurs</p>  
+                    </div>
+                    <div>
+                        <button type="button" class="bouton">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="element_presentation">
+                    <div>
+                        <img src="./assets/images/telephone_installation.png" alt="image telephone installation" class="image_presentation">
+                    </div>
+                    <div>
+                        <h3>Installation</h3>
+                    </div>
+                    <div>
+                        <p>Formation des meilleurs au meikkeurs</p>  
+                    </div>
+                    <div>
+                        <button type="button" class="bouton">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="element_presentation">
+                    <div>
+                        <img src="./assets/images/maintenance.png" alt="image maintenance" class="image_presentation">
+                    </div>
+                    <div>
+                        <h3>Maintenance</h3>
+                    </div>
+                    <div>
+                        <p>Formation des meilleurs au meikkeurs</p>  
+                    </div>
+                    <div>
+                        <button type="button" class="bouton">En savoir plus</button>
+                    </div>
+                </div>
+              </div>
         </div>
 
         <div id="video_section">
             <div>
-                <div class="text">
+                <div class="text fade" data-entrance="from-left">
                     <h2>Titre du texte</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa vel mollis malesuada. Sed mollis mi ut purus hendrerit, sed gravida eros tempor.</p>
                 </div>
-                <div class="container-iframe">
+                <div class="container-iframe fade" data-entrance="fade">
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/X7Ucy7FRMeY?autoplay=1&mute=1&rel=0"></iframe>
                 </div>
             </div>
@@ -114,10 +193,10 @@
 
         <div id="avis_section">
             <div class="titre">
-                <h1>Les avis de nos clients</h1>
+                <h1 class="fade" data-entrance="fade">Les avis de nos clients</h1>
             </div>
             <div class="avis_container">
-                <div class="avis">
+                <div class="avis fade" data-entrance="fade">
                 <div class="informations">
                     <h2>Titre avis</h2>
                     <div class="etoiles">
@@ -137,7 +216,7 @@
                     <h4>Nom prénom</h4>
                 </div>
                 </div>
-                <div class="avis">
+                <div class="avis fade" data-entrance="fade">
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
@@ -157,7 +236,7 @@
                         <h4>Nom prénom</h4>
                     </div>
                 </div>
-                <div class="avis">
+                <div class="avis fade" data-entrance="fade">
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
@@ -177,7 +256,7 @@
                         <h4>Nom prénom</h4>
                     </div>
                 </div>
-                <div class="avis">
+                <div class="avis fade" data-entrance="fade">
                         <div class="informations">
                             <h2>Titre avis</h2>
                             <div class="etoiles">
@@ -197,7 +276,7 @@
                             <h4>Nom prénom</h4>
                         </div>
                 </div>
-                <div class="avis">
+                <div class="avis fade" data-entrance="fade">
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
@@ -222,9 +301,9 @@
         
         <div id="carrousel_partenaires">
             <div class="titre">
-                <h1>Ils nous font confiance ...</h1>
+                <h1 class="fade" data-entrance="fade">Ils nous font confiance ...</h1>
             </div>
-            <div class="carrousel_partenaires">
+            <div class="carrousel_partenaires fade" data-entrance="fade">
                 <div class="carrousel_partenaires-enfant premier">
                     <div>
                         <div class="partenaire ligne1">
@@ -280,7 +359,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carrousel_partenaires">
+            <div class="carrousel_partenaires fade" data-entrance="fade">
                 <div class="carrousel_partenaires-enfant deuxieme">
                     <div>
                         <div class="partenaire ligne2">
@@ -336,7 +415,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carrousel_partenaires">
+            <div class="carrousel_partenaires fade" data-entrance="fade">
                 <div class="carrousel_partenaires-enfant troisieme">
                     <div>
                         <div class="partenaire ligne2">
