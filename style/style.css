@@ -46,19 +46,23 @@ p{
 
 /* STYLE DE LA SECTION DE LA PRESENTATION */
 #presentation_section{
+    background-color: white;
     padding : 20px 25px 60px 25px;
     text-align: center;
     height: auto;
+    max-width: 2000px;
+    overflow: hidden;
 }
 #presentation_section > .titre{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     animation: fadeIn 2s;
 }
 #presentation_elements{
     display: flex; 
     flex-wrap : wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 0;
+    transition:  0.5s gap ease-in;
 }
 .element_presentation h3 {
     font-weight: 900;
@@ -76,7 +80,7 @@ p{
     line-height: 1.5;
 }
 .element_presentation{
-    width: 300px;
+    width: 250px;
     height: auto;
     background-color: none;
     border-radius: 30px;
@@ -84,13 +88,26 @@ p{
     place-content: center;
     color: black;
     gap: 20px;
-    padding: 10px 15px;
+    padding: 40px 15px;
 }
 .image_presentation{
     background-color: white;
     border-radius: 10px;
     height: 100px;
     width: auto;
+}
+@media only screen and (max-width: 900px){
+    .element_presentation{
+        gap: 10px;
+    }
+    #presentation_elements{
+        gap: 80px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    #presentation_elements{
+        gap: 40px;
+    }
 }
 /* FIN DU STYLE DE LA SECTION DE LA PRESENTATION */
 
