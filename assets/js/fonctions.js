@@ -105,3 +105,9 @@ points.forEach(function(point, index) {
         activeSlide.classList.remove("active")
     })
 })
+
+function myFunction() {
+    
+    button_next.click();
+ }
+ setInterval(myFunction, 7000);

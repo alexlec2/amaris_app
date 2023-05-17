@@ -149,6 +149,7 @@ p{
     width: 30%;
     font-size: 1.6em;
     transition: font-size 0.5s ease-in;
+    line-height: 1.25;
 }
 .text h2{
     margin-bottom: 30px;
