@@ -46,10 +46,14 @@
     width : 30%;
     max-width : 800px;
     margin :0 7vw;
-    padding : 40px;
+    padding : 20px 30px;
     background-color: rgba(0,0,0,0.7);
     border-radius : 20px;
     transition: all 0.3s;
+}
+
+p{
+    margin-bottom: 0;
 }
 
 .carrousel .active{
@@ -127,25 +131,23 @@
 }
 
 @media only screen and (max-width: 1586px) {
-    .section_carrousel{
-        height:510px;
+    .section_carrousel, .slide, .carrousel, .image_carrousel{
+        height:450px;
+        font-size : 1.2rem;
     }
 
-    .slide{
-        height:510px;
-    }
-
-    .carrousel{
-        height:510px;
+    .section_carrousel h1{
+        line-height: 1.25;
     }
 
     .bas_carrousel{
         height : 35px;
     }
 
-    .image_carrousel{
-        height : 510px;
+    .slide .carrousel-text{
+        padding : 20px 30px;
     }
+
 
 }
 
@@ -155,6 +157,9 @@
     .slide .carrousel-text{
         width : 70%;
         font-size : 1.3rem;
+    }
+    .section_carrousel, .slide, .carrousel, .image_carrousel{
+        height:400px;
     }
 }
 
