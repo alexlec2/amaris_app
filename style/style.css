@@ -65,6 +65,7 @@ p{
     gap: 0;
     transition:  0.5s gap ease-in;
 }
+
 .element_presentation h3 {
     font-weight: 600;
     text-transform: none;
@@ -80,6 +81,7 @@ p{
     letter-spacing: -.08px;
     line-height: 1.5;
 }
+
 .element_presentation{
     width: 250px;
     height: auto;
@@ -99,7 +101,8 @@ p{
 .image_presentation{
     background-color: white;
     border-radius: 10px;
-    height: 90px;
+    margin-top : 15px;
+    height: 70px;
     width: auto;
     animation: fadeIn 2s;
 }
@@ -297,6 +300,9 @@ p{
     place-content: center;
     padding: 30px 0;
 
+}
+.avis-dark {
+    background-color:#282d32;
 }
 .avis_container {
     width: inherit;

@@ -1,5 +1,7 @@
 function toggleDark(){
     document.getElementById("footer").classList.toggle("dark")
+    document.getElementById("avis_section").classList.toggle("dark")
+    document.querySelectorAll(".avis").classList.toggle("avis dark")
     let logo = document.getElementsByClassName("logo")
     for (let i = 0; i < logo.length; i++ ) {
         if(logo[i].style.filter !== "invert(1)"){
