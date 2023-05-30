@@ -3,66 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Amaris Telecom</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/navbar.css">
-    <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/carrousel.css">
-    <script src="./assets/js/fonctions.js" defer></script>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/navbar.css">
+    <link rel="stylesheet" href="../../style/footer.css">
+    <link rel="stylesheet" href="../../style/carrousel.css">
+    <script src="./../../assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="./scroll-entrance-master/src/scroll-entrance.js"></script>
+    <script src="../../scroll-entrance-master/src/scroll-entrance.js"></script>
 </head>
 <body>
-    <header>
-        <div class="navbarDiv" >
-            <a href="/">
-                <img src="./assets/logo/logo-Amaris.png" alt="Amaris Telecom Logo" style="width : auto; height : 70px;"/>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">Expertise</a></li>
-                    <li class="menu_deroulant">
-                        <a href="#">Formations</a>
-                        <ul class="menu_sous_deroulant">
-                            <li><a href="#">OMNIVISTA</a></li>
-                            <li><a href="#">OMC</a></li>
-                            <li><a href="#">VAA</a></li>
-                            <li><a href="#">Rainbow</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Devis</a></li>
-                    <li><a href="#">À propos</a></li>
-                </ul>
-            </nav>
-            <div id="bouton_contact_div">
-                <button id="bouton_contact" class="bouton" role="button">Contact</button>
-            </div>
-            <div id="menu_responsive_div">
-                <img id="menuResponsive" src="./assets/icons/menu-responsive.png" alt="Menu responsive icon"/>
-                <img id="xResponsive" class="to_not_display" src="./assets/icons/x.png" alt="X responsive icon"/>
-            </div>
-
-        </div>
-
-       
-    </header>
-    <div class="responsiveNavbar to_not_display animate__animated animate__slideInDown">
-        <ul>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Formations</a> </li>
-            <li><a href="#">Installation</a></li>
-            <li><a href="#">Devis/Catalogue</a></li>
-        </ul>
-    </div>
-    <div class="responsiveNavbar to_not_display animate__animated animate__slideOutUp">
-        <ul>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Formations</a> </li>
-            <li><a href="#">Installation</a></li>
-            <li><a href="#">Devis/Catalogue</a></li>
-        </ul>
-    </div>
+    <?php include('../navbar.php'); ?>
 
     <div class="body">
         <div id="carroussel_intro">
@@ -72,27 +23,27 @@
                     <button class="bouton_carrousel prev" data-carousel-button="next">&#8249;</button>
                     <ul data-slides>
                         <li class="slide active">
-                            <img class="image_carrousel" src="assets/images/telephone.jpg" alt="image1">
+                            <img class="image_carrousel" src="../../assets/images/telephone.jpg" alt="image1">
                             <span class="carrousel-text fade" data-entrance="fade">
                                 <h1>Services de conseil et de formation</h1>
                                 <p>AMARIS est experte en téléphonie, en télécommunications et en informatique depuis plus de 24 ans</p>
                             </span>
                         </li>
                         <li class="slide">
-                            <img class="image_carrousel" id="image_telephone" src="assets/images/cables.jpg" alt="image2">
+                            <img class="image_carrousel" id="image_telephone" src="../../assets/images/cables.jpg" alt="image2">
                             <span class="carrousel-text">
                                 <h1>Services d'installation et de maintenance</h1>
                                 <p>AMARIS réalise également des installations téléphoniques et assure la maintenance du matériel</p>
                             </span>
                         </li>
                         <li class="slide">
-                            <img class="image_carrousel" src="assets/images/bureau.jpg" alt="image3">
+                            <img class="image_carrousel" src="../../assets/images/bureau.jpg" alt="image3">
                             <span class="carrousel-text">
                                 <h1>Environnement de formation agréable</h1>
                                 <p>Nous vous accueillons dans nos locaux situés à Levallois-Perret</p>
                             </span>
                         </li>
-                        <li class="slide"><img class="image_carrousel" src="assets/images/chm.jpg" alt="image3"><span class="carrousel-text"><h1>Nos références</h1><p>Amaris est appuyée par des références de renom et bénéficie d'un partenariat exclusif avec le CHM</p></span></li>
+                        <li class="slide"><img class="image_carrousel" src="../../assets/images/chm.jpg" alt="image3"><span class="carrousel-text"><h1>Nos références</h1><p>Amaris est appuyée par des références de renom et bénéficie d'un partenariat exclusif avec le CHM</p></span></li>
                     </ul>
                 </div>
             </section>
@@ -115,7 +66,7 @@
             <div id="presentation_elements">
                 <div class="element_presentation">
                     <div class="icone_presentation">
-                        <img src="./assets/images/formation4_256.png" alt="image formations" class="image_presentation">
+                        <img src="./../../assets/images/formation4_256.png" alt="image formations" class="image_presentation">
                     </div>
                     <div class="element_presentation_text  fade" data-entrance="fade">
                         <div>
@@ -132,7 +83,7 @@
                 </div>
                 <div class="element_presentation">
                     <div>
-                        <img  src="./assets/images/conseil3_256.png" alt="image conseil" class="image_presentation">
+                        <img  src="./../../assets/images/conseil3_256.png" alt="image conseil" class="image_presentation">
                     </div>
                     <div class="element_presentation_text  fade" data-entrance="fade">
                         <div>
@@ -148,7 +99,7 @@
                 </div>
                 <div class="element_presentation">
                     <div >
-                        <img src="./assets/images/installation_telephone2_256.png" alt="image telephone installation" class="image_presentation">
+                        <img src="./../../assets/images/installation_telephone2_256.png" alt="image telephone installation" class="image_presentation">
                     </div>
                     <div class="element_presentation_text  fade" data-entrance="fade">
                         <div>
@@ -164,7 +115,7 @@
                 </div>
                 <div class="element_presentation">
                     <div>
-                        <img src="./assets/images/maintenance3_256.png" alt="image maintenance" class="image_presentation">
+                        <img src="./../../assets/images/maintenance3_256.png" alt="image maintenance" class="image_presentation">
                     </div>
                     <div class="element_presentation_text  fade" data-entrance="fade">
                         <div>
@@ -206,11 +157,11 @@
                 <div class="informations">
                     <h2>Titre avis</h2>
                     <div class="etoiles">
-                        <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                        <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                        <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                        <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                        <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                        <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                        <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                        <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                        <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                        <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
                     </div>
                 </div>
                 <div class="commentaires">
@@ -227,11 +178,11 @@
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
                         </div>
                     </div>
                     <div class="commentaires">
@@ -248,11 +199,11 @@
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
                         </div>
                     </div>
                     <div class="commentaires">
@@ -269,11 +220,11 @@
                         <div class="informations">
                             <h2>Titre avis</h2>
                             <div class="etoiles">
-                                <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                                <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                                <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                                <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                                <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                                <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                                <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                                <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                                <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                                <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
                             </div>
                         </div>
                         <div class="commentaires">
@@ -290,11 +241,11 @@
                     <div class="informations">
                         <h2>Titre avis</h2>
                         <div class="etoiles">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
-                            <img src="assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
+                            <img src="../../assets/icons/etoile-jaune.png" alt="etoile icon" class="logo etoile">
                         </div>
                     </div>
                     <div class="commentaires">
@@ -318,54 +269,54 @@
                 <div class="carrousel_partenaires-enfant premier">
                     <div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-acadomia.png" alt="logo acadomia">
+                            <img src="./../../assets/logo/logo-acadomia.png" alt="logo acadomia">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-bcsh.jpg" alt="logo bcsh">
+                            <img src="./../../assets/logo/logo-bcsh.jpg" alt="logo bcsh">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-BNP-Paribas.jpg" alt="logo bnp">
+                            <img src="./../../assets/logo/logo-BNP-Paribas.jpg" alt="logo bnp">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-chc.jpg" alt="logo chc">
+                            <img src="./../../assets/logo/logo-chc.jpg" alt="logo chc">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-CHM.png" alt="logo CHM">
+                            <img src="./../../assets/logo/logo-CHM.png" alt="logo CHM">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-credit-agricole.jpg" alt="logo credit agricole">
+                            <img src="./../../assets/logo/logo-credit-agricole.jpg" alt="logo credit agricole">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-dgac.jpg" alt="logo dgac">
+                            <img src="./../../assets/logo/logo-dgac.jpg" alt="logo dgac">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-Enedis-ERDF.png" alt="logo enedis">
+                            <img src="./../../assets/logo/logo-Enedis-ERDF.png" alt="logo enedis">
                         </div>
                     </div>
                     <div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-acadomia.png" alt="logo acadomia">
+                            <img src="./../../assets/logo/logo-acadomia.png" alt="logo acadomia">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-bcsh.jpg" alt="logo bcsh">
+                            <img src="./../../assets/logo/logo-bcsh.jpg" alt="logo bcsh">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-BNP-Paribas.jpg" alt="logo bnp">
+                            <img src="./../../assets/logo/logo-BNP-Paribas.jpg" alt="logo bnp">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-chc.jpg" alt="logo chc">
+                            <img src="./../../assets/logo/logo-chc.jpg" alt="logo chc">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-CHM.png" alt="logo CHM">
+                            <img src="./../../assets/logo/logo-CHM.png" alt="logo CHM">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-credit-agricole.jpg" alt="logo credit agricole">
+                            <img src="./../../assets/logo/logo-credit-agricole.jpg" alt="logo credit agricole">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-dgac.jpg" alt="logo dgac">
+                            <img src="./../../assets/logo/logo-dgac.jpg" alt="logo dgac">
                         </div>
                         <div class="partenaire ligne1">
-                            <img src="./assets/logo/logo-Enedis-ERDF.png" alt="logo enedis">
+                            <img src="./../../assets/logo/logo-Enedis-ERDF.png" alt="logo enedis">
                         </div>
                     </div>
                 </div>
@@ -374,54 +325,54 @@
                 <div class="carrousel_partenaires-enfant deuxieme">
                     <div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-etat-francais.png" alt="logo etat-francais">
+                            <img src="./../../assets/logo/logo-etat-francais.png" alt="logo etat-francais">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-FFB.jpg" alt="logo FFB">
+                            <img src="./../../assets/logo/logo-FFB.jpg" alt="logo FFB">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-ineo.jpg" alt="logo ineo">
+                            <img src="./../../assets/logo/logo-ineo.jpg" alt="logo ineo">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-medicall.png" alt="logo medicall">
+                            <img src="./../../assets/logo/logo-medicall.png" alt="logo medicall">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-moco.png" alt="logo moco">
+                            <img src="./../../assets/logo/logo-moco.png" alt="logo moco">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-ratp.png" alt="logo ratp">
+                            <img src="./../../assets/logo/logo-ratp.png" alt="logo ratp">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-Thales.png" alt="logo Thales">
+                            <img src="./../../assets/logo/logo-Thales.png" alt="logo Thales">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-Sebia.png" alt="logo Sebia">
+                            <img src="./../../assets/logo/logo-Sebia.png" alt="logo Sebia">
                         </div>
                     </div>
                     <div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-etat-francais.png" alt="logo etat-francais">
+                            <img src="./../../assets/logo/logo-etat-francais.png" alt="logo etat-francais">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-FFB.jpg" alt="logo FFB">
+                            <img src="./../../assets/logo/logo-FFB.jpg" alt="logo FFB">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-ineo.jpg" alt="logo ineo">
+                            <img src="./../../assets/logo/logo-ineo.jpg" alt="logo ineo">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-medicall.png" alt="logo medicall">
+                            <img src="./../../assets/logo/logo-medicall.png" alt="logo medicall">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-moco.png" alt="logo moco">
+                            <img src="./../../assets/logo/logo-moco.png" alt="logo moco">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-ratp.png" alt="logo ratp">
+                            <img src="./../../assets/logo/logo-ratp.png" alt="logo ratp">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-Thales.png" alt="logo Thales">
+                            <img src="./../../assets/logo/logo-Thales.png" alt="logo Thales">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-Sebia.png" alt="logo Sebia">
+                            <img src="./../../assets/logo/logo-Sebia.png" alt="logo Sebia">
                         </div>
                     </div>
                 </div>
@@ -430,54 +381,54 @@
                 <div class="carrousel_partenaires-enfant troisieme">
                     <div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/Logo_Chevilly-Larue.png" alt="logo Chevilly-Larue">
+                            <img src="./../../assets/logo/Logo_Chevilly-Larue.png" alt="logo Chevilly-Larue">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-saint-germain-laye.jpg" alt="logo saint germain en laye">
+                            <img src="./../../assets/logo/logo-saint-germain-laye.jpg" alt="logo saint germain en laye">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_Ville_Choisy-le-Roi.png" alt="logo choisy le roi">
+                            <img src="./../../assets/logo/logo_Ville_Choisy-le-Roi.png" alt="logo choisy le roi">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-vigneux.png" alt="logo vigneux">
+                            <img src="./../../assets/logo/logo-vigneux.png" alt="logo vigneux">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
+                            <img src="./../../assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-port-du-havre.jpg" alt="logo port du havre">
+                            <img src="./../../assets/logo/logo-port-du-havre.jpg" alt="logo port du havre">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-vigneux.png" alt="logo vigneux">
+                            <img src="./../../assets/logo/logo-vigneux.png" alt="logo vigneux">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
+                            <img src="./../../assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
                         </div>
                     </div>
                     <div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/Logo_Chevilly-Larue.png" alt="logo Chevilly-Larue">
+                            <img src="./../../assets/logo/Logo_Chevilly-Larue.png" alt="logo Chevilly-Larue">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-saint-germain-laye.jpg" alt="logo saint germain en laye">
+                            <img src="./../../assets/logo/logo-saint-germain-laye.jpg" alt="logo saint germain en laye">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_Ville_Choisy-le-Roi.png" alt="logo choisy le roi">
+                            <img src="./../../assets/logo/logo_Ville_Choisy-le-Roi.png" alt="logo choisy le roi">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-vigneux.png" alt="logo vigneux">
+                            <img src="./../../assets/logo/logo-vigneux.png" alt="logo vigneux">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
+                            <img src="./../../assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-port-du-havre.jpg" alt="logo port du havre">
+                            <img src="./../../assets/logo/logo-port-du-havre.jpg" alt="logo port du havre">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo-vigneux.png" alt="logo vigneux">
+                            <img src="./../../assets/logo/logo-vigneux.png" alt="logo vigneux">
                         </div>
                         <div class="partenaire ligne2">
-                            <img src="./assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
+                            <img src="./../../assets/logo/logo_metro_rvb.jpg" alt="logo montpellier metro">
                         </div>
                     </div>
                 </div>
@@ -490,71 +441,13 @@
     <div id="darkButton">
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="checkbox-label">
-            <img class="moon" src="./assets/icons/moon.png" alt="moon svg">
-            <img class="sun" src="./assets/icons/sun.png" alt="moon svg">
+            <img class="moon" src="./../../assets/icons/moon.png" alt="moon svg">
+            <img class="sun" src="./../../assets/icons/sun.png" alt="moon svg">
             <span class="ball"></span>
         </label>
     </div>
 
-    <footer id="footer" class="footer">
-        <div class="footer_elements">
-            <div class="services_footer">
-                <div>
-                    <h2>Nos services</h2>
-                    <p>Telecommunication</p>
-                    <p>Formation</p>
-                    <p>Installation</p>
-                    <p>Vente</p>
-                </div>
-            </div>
-            <div class="contact_footer">
-                <div>
-                <h2>Contact</h2>
-                <div class="contact_element">
-                    <img src="assets/icons/phone.png" alt="Phone Logo" class="logo">
-                    <a href="tel:0141499494">01 41 49 94 94</a>
-                </div>
-                <div class="contact_element">
-                    <img src="assets/icons/envelope.png" alt="Enveloppe Logo" class="logo">
-                    <a href="mailto:amaris@amaristelecom.com">amaris@amaristelecom.com</a>
-                </div>
-                <div class="contact_element">
-                    <img src="assets/icons/map.png" alt="Map Logo" class="logo">
-                    <a href="https://goo.gl/maps/v1Hs2HonZ69SfXP98" target="_blank">125 rue Aristide Briand, 92300 Levallois Perret</a>
-                </div>
-                </div>
-            </div>
-            <div class="horaire_footer">
-                <div>
-                <h2>Nos horaires</h2>
-                <div class="horaire_element">
-                    <img src="assets/icons/calendar-check.png" alt="Calendar check Logo" class="logo">
-
-                    <div>Lundi à Jeudi : 8h-20h</div>
-                </div>
-                <div class="horaire_element">
-                    <img src="assets/icons/calendar-check.png" alt="Calendar check Logo" class="logo">
-                    <div>Vendredi : 8h-17h</div>
-                </div>
-                </div>
-            </div>
-            <div class="reseaux_footer">
-                <div>
-                <h2>Nos réseaux</h2>
-                <div class="reseaux_element">
-                    <img src="assets/icons/youtube.png" alt="Youtube Logo" class="logo">
-                    <a href="https://www.youtube.com/@amaristelecom" target="_blank">YouTube</a>
-                </div>
-                <div class="reseaux_element">
-                    <img src="assets/icons/linkedin.png" alt="Linkedin Logo" class="logo">
-                    <a href="https://www.linkedin.com/company/amaris-audit-maitrise-administration-reseau-informatique-systeme/about/" target="_blank">Linkedin</a>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <small>Copyright © 2023 amaristelecomm.com</small>
-        </div>
-    </footer>
+    <?php include('../footer.php'); ?>
+    
 </body>
 </html>

@@ -20,6 +20,12 @@ p{
     margin-top: 70px;
     height: auto;
 }
+.en_cours_developpement{
+    height: 500px;
+    margin-top: 70px;
+    display: grid;
+    place-content: center;
+}
 .titre{
     text-align: center;
     padding: 10px 20px;
