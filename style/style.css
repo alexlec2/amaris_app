@@ -337,9 +337,9 @@ p{
     justify-content: start;
     align-items: center;
 }
-.nom_prénom{
+.nom_prénom_date{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 .etoile{
     color: yellow;

@@ -47,7 +47,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 180px;
     transition: .25s ease-out;
 }
 
@@ -213,12 +213,12 @@ nav > ul li:hover .menu_sous_deroulant{
 
 @media only screen and (max-width: 1200px){
     nav ul li {
-        width : 185px;
+        width : 150px;
     }
 }
 @media only screen and (max-width: 1000px){
     nav ul li {
-        width : 160px;
+        width : 130px;
     }
 }
 @media only screen and (max-width: 900px){
