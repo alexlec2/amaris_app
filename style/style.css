@@ -6,7 +6,11 @@
 }
 */
 
-
+@font-face {
+    font-family: 'Mukta Mahee';
+    src: url('../assets/font/Mukta_Mahee/MuktaMahee-Medium.ttf') format('truetype'),
+  }
+  
 * {
     font-family: 'Mukta Mahee', sans-serif;
     margin : 0;
