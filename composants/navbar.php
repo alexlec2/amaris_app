@@ -24,8 +24,8 @@
                 <button id="bouton_contact" class="bouton" role="button"><a href="./contact.php">Contact</a></button>
             </div>
             <div id="menu_responsive_div">
-                <img id="menuResponsive" src="./assets/icons/menu-responsive.png" alt="Menu responsive icon"/>
-                <img id="xResponsive" class="to_not_display" src="./assets/icons/x.png" alt="X responsive icon"/>
+                <img id="menuResponsive" src="../../assets/icons/menu-responsive.png" alt="Menu responsive icon"/>
+                <img id="xResponsive" class="to_not_display" src="../../assets/icons/x.png" alt="X responsive icon"/>
             </div>
 
         </div>

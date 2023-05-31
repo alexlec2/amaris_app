@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../style/carrousel.css">
     <script src="./../../assets/js/fonctions.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <script src="../../scroll-entrance-master/src/scroll-entrance.js"></script>
 </head>
 <body>
