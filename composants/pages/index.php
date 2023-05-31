@@ -19,25 +19,25 @@
         <div id="carroussel_intro">
             <section class="section_carrousel" aria-label="images_carrousel">
                 <div class="carrousel" data-carousel>
-                    <button class="bouton_carrousel next" data-carousel-button="prev">&#8250;</button>
+                    <button id="button_carrousel_next" class="bouton_carrousel next" data-carousel-button="prev">&#8250;</button>
                     <button class="bouton_carrousel prev" data-carousel-button="next">&#8249;</button>
                     <ul data-slides>
                         <li class="slide active">
-                            <img class="image_carrousel" src="../../assets/images/telephone.jpg" alt="image1">
+                            <img class="image_carrousel" src="../../assets/images/IMG_8541.jpg" alt="image1">
                             <span class="carrousel-text fade" data-entrance="fade">
                                 <h1>Services de conseil et de formation</h1>
                                 <p>AMARIS est experte en téléphonie, en télécommunications et en informatique depuis plus de 24 ans</p>
                             </span>
                         </li>
                         <li class="slide">
-                            <img class="image_carrousel" id="image_telephone" src="../../assets/images/cables.jpg" alt="image2">
+                            <img class="image_carrousel" id="image_telephone" src="../../assets/images/IMG_8542.jpg" alt="image2">
                             <span class="carrousel-text">
                                 <h1>Services d'installation et de maintenance</h1>
                                 <p>AMARIS réalise également des installations téléphoniques et assure la maintenance du matériel</p>
                             </span>
                         </li>
                         <li class="slide">
-                            <img class="image_carrousel" src="../../assets/images/bureau.jpg" alt="image3">
+                            <img class="image_carrousel" src="../../assets/images/IMG_8550.jpg" alt="image3">
                             <span class="carrousel-text">
                                 <h1>Environnement de formation agréable</h1>
                                 <p>Nous vous accueillons dans nos locaux situés à Levallois-Perret</p>

@@ -108,8 +108,12 @@ points.forEach(function(point, index) {
     })
 })
 
-function myFunction() {
-    
+function next_slide_carrousel() {
     button_next.click();
  }
- setInterval(myFunction, 7000);
+ let next_carrousel_timeout
+ next_carrousel_timeout = setInterval(next_slide_carrousel, 7000);
+ /*
+ document.getElementById('button_carrousel_next').addEventListener("click", function(){
+    clearTimeout(next_carrousel_timeout)
+ })*/
